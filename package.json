@@ -6,10 +6,7 @@
   "author": "Douglas Moura",
   "license": "MIT",
   "scripts": {
-    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect  --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "test": "jest",
-    "build": "babel src --extensions \".ts\" --out-dir dist --copy-files",
-    "build:prod":"nodemon dist/shared/infra/http/server.js"
+    "build:prod":"node dist/shared/infra/http/server.js"
   },
   "dependencies": {
     "amqplib": "^0.8.0",
